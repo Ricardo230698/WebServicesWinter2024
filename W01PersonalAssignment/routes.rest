@@ -1,10 +1,17 @@
 //LOCALHOST
 GET http://localhost:8080/contacts
 ###
-GET http://localhost:8080/contacts/blue
+GET http://localhost:8080/contacts/65e534e21d589164b69abd01
 ###
-GET http://localhost:8080/contacts/green
+GET http://localhost:8080/contacts/65e534e21d589164b69abd00
 ###
-GET http://localhost:8080/contacts/red
+GET http://localhost:8080/contacts/65e534e21d589164b69abd02
 
 // PRODUCTION Deploy
+GET https://webserviceswinter2024.onrender.com/contacts
+###
+GET https://webserviceswinter2024.onrender.com/contacts/65e534e21d589164b69abd01
+###
+GET https://webserviceswinter2024.onrender.com/contacts/65e534e21d589164b69abd00
+###
+GET https://webserviceswinter2024.onrender.com/contacts/65e534e21d589164b69abd02
