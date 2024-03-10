@@ -1,17 +1,16 @@
 //LOCALHOST
 GET http://localhost:8080/contacts
 ###
-GET http://localhost:8080/contacts/65e534e21d589164b69abd01
+POST http://localhost:8080/contacts/
+{
+  "firstName": "Santiago", "lastName": "Ilustiza", "email": "oticse@gmail.com", "favoriteColor": "green", "birthday": "12 Jan 2023"
+}
 ###
-GET http://localhost:8080/contacts/65e534e21d589164b69abd00
+PUT http://localhost:8080/contacts/658642cf40ba96c108c200d9
+{
+  "firstName": "Rafael", "lastName": "Peña", "email": "rafa@gmail.com", "favoriteColor": "brown", "birthday": "123"
+}
 ###
-GET http://localhost:8080/contacts/65e534e21d589164b69abd02
+DELETE http://localhost:8080/contacts/658642cf40ba96c108c200d9
 
 // PRODUCTION Deploy
-GET https://webserviceswinter2024.onrender.com/contacts
-###
-GET https://webserviceswinter2024.onrender.com/contacts/65e534e21d589164b69abd01
-###
-GET https://webserviceswinter2024.onrender.com/contacts/65e534e21d589164b69abd00
-###
-GET https://webserviceswinter2024.onrender.com/contacts/65e534e21d589164b69abd02
