@@ -14,3 +14,16 @@ PUT http://localhost:8080/contacts/658642cf40ba96c108c200d9
 DELETE http://localhost:8080/contacts/658642cf40ba96c108c200d9
 
 // PRODUCTION Deploy
+GET https://ws2024-um80.onrender.com/contacts
+###
+POST https://ws2024-um80.onrender.com/contacts/
+{
+  "firstName": "Santiago", "lastName": "Ilustiza", "email": "oticse@gmail.com", "favoriteColor": "green", "birthday": "12 Jan 2023"
+}
+###
+PUT https://ws2024-um80.onrender.com/contacts/658642cf40ba96c108c200d9
+{
+  "firstName": "Rafael", "lastName": "Peña", "email": "rafa@gmail.com", "favoriteColor": "brown", "birthday": "123"
+}
+###
+DELETE https://ws2024-um80.onrender.com/contacts/658642cf40ba96c108c200d9
