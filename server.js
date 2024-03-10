@@ -13,6 +13,10 @@ const mongodb = require('./ConnectionDB/mongodb');
 // Middlewares
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(bodyParser.json())
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+})
 app.use('/', router);
 
 // Here I'm using the function we created and exported from our connection database file.
