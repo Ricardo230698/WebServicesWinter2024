@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const router = require('./routers/index');
 const port = process.env.PORT || 8080;
-const app = express();
 const createError = require('http-errors');
 
 // Importing the database connection
@@ -12,6 +11,7 @@ const mongodb = require('./connectionDB/mongodb');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 
+const app = express();
 
 // Middlewares
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
