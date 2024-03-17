@@ -5,7 +5,7 @@ const port = process.env.PORT || 8080;
 const createError = require('http-errors');
 
 // Importing the database connection
-const mongodb = require('./connectionDB/mongodb');
+const mongodb = require('./ConnectionDB/mongodb');
 
 // Swagger
 const swaggerUi = require('swagger-ui-express');

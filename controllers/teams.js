@@ -1,5 +1,5 @@
 // Importing the database connection
-const mongodb = require('../connectionDB/mongodb');
+const mongodb = require('../ConnectionDB/mongodb');
 const ObjectId = require('mongodb').ObjectId;
 const createError = require('http-errors');
 // const { BSONError } = require('bson');
