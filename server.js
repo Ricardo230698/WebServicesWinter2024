@@ -5,12 +5,13 @@ const port = process.env.PORT || 8080;
 const app = express();
 const createError = require('http-errors');
 
+// Importing the database connection
+const mongodb = require('./connectionDB/mongodb');
+
 // Swagger
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 
-// Importing the database connection
-const mongodb = require('./connectionDB/mongodb');
 
 // Middlewares
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
