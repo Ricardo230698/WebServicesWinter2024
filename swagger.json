@@ -2,16 +2,16 @@
   "swagger": "2.0",
   "info": {
     "title": "My API",
-    "description": "Contacts API",
+    "description": "Sports API",
     "version": "1.0.0"
   },
-  "host": "ws2024-um80.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
     "https"
   ],
   "paths": {
-    "/contacts/": {
+    "/teams/": {
       "get": {
         "description": "",
         "produces": [
@@ -32,25 +32,31 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "name": {
                   "example": "any"
                 },
-                "lastName": {
+                "foundationDate": {
                   "example": "any"
                 },
-                "email": {
+                "website": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "nationalCups": {
                   "example": "any"
                 },
-                "birthday": {
+                "internationalCups": {
+                  "example": "any"
+                },
+                "stadiumName": {
+                  "example": "any"
+                },
+                "city": {
                   "example": "any"
                 }
               }
             }
           }
-        ],        
+        ],
         "produces": [
           "application/json"
         ],
@@ -61,7 +67,7 @@
         }
       }
     },
-    "/contacts/{id}": {
+    "/teams/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -96,19 +102,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "name": {
                   "example": "any"
                 },
-                "lastName": {
+                "foundationDate": {
                   "example": "any"
                 },
-                "email": {
+                "website": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "nationalCups": {
                   "example": "any"
                 },
-                "birthday": {
+                "internationalCups": {
+                  "example": "any"
+                },
+                "stadiumName": {
+                  "example": "any"
+                },
+                "city": {
                   "example": "any"
                 }
               }
