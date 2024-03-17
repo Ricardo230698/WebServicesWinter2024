@@ -5,7 +5,7 @@ const doc = {
         title: 'My API',
         description: 'Sports API'
     },
-    host: 'ws2024-um80.onrender.com',
+    host: 'webserviceswinter24.onrender.com',
     schemes: ['https']
 };
 

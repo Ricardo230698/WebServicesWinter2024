@@ -5,7 +5,7 @@
     "description": "Sports API",
     "version": "1.0.0"
   },
-  "host": "ws2024-um80.onrender.com",
+  "host": "webserviceswinter24.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
